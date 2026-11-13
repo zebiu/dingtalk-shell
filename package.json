@@ -1,0 +1,15 @@
+{
+  "name": "dingtalk-shell",
+  "version": "0.1.0",
+  "private": true,
+  "description": "钉钉风格桌面外壳：把知乎 / linux.do / X / 小红书内容包装成 IM 会话",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^45.2.3",
+    "electron-builder": "^26.18.0"
+  }
+}

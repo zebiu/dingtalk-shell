@@ -1,0 +1,29 @@
+appId: cn.workbuddy.dingtalk-shell
+productName: DingTalk
+copyright: Local build
+
+directories:
+  output: dist/single
+  buildResources: build
+
+# 用本地已装好的 Electron 二进制，避免重复下载
+electronDist: node_modules/electron/dist
+npmRebuild: false
+asar: true
+compression: normal
+
+# 只打源码。缓存与运行状态由 main.js 在 userData 目录生成，
+# 绝不把本地抓到的真实内容编进分发的 exe。
+files:
+  - main.js
+  - preload.js
+  - renderer/**/*
+  - package.json
+
+win:
+  icon: build/icon.ico
+  target:
+    - portable
+
+portable:
+  artifactName: DingTalk-Portable-${version}.exe

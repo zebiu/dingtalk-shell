@@ -1,0 +1,17 @@
+# 依赖与构建中间产物
+node_modules/
+dist/
+release/
+build/exe-icon-check.*
+build/icon-source.png
+
+# 本地运行数据（含真实站点抓取内容，不要提交）
+data-cache.json
+runtime-status.json
+
+# 本地素材、截图与调试产物
+_local/
+preview-*.png
+*.log
+.DS_Store
+Thumbs.db
